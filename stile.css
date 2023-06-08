@@ -1,0 +1,23 @@
+.bgc-black{
+    background-color: black;
+}
+#table{
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+    border:2px solid white
+
+}
+.clicked{
+    background-color: aqua;
+}
