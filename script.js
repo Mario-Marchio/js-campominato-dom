@@ -12,17 +12,20 @@ const rows = 10;
 const cols = 10;
 const allCells = rows * cols;
 
+let totalScore = 0;
+
 button.addEventListener(`click`, ()=>{
     
     for(let i= 0; i < allCells; i++){
         const cell = createCell();
         cell.innerText = i + 1;
-    
+        
         cell.addEventListener(`click` , ()=>{
             cell.classList.add(`clicked`);
-            console.log(cell);
+            console.log(cell.innerText);
+             ++totalScore;
+            console.log(totalScore);
         })
-    
         table.appendChild(cell);
     }
 });
